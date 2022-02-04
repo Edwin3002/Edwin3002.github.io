@@ -232,3 +232,24 @@ button:hover{
     font-size: x-large;
     font-weight: bolder;
 }
+#hola{
+    z-index: 100;
+    position: absolute;
+    right: 0;
+    margin-top: 5px;
+    list-style: none;
+}
+
+#hola a{
+    
+    margin-right: 20px;
+    color: #bdbdbd;
+    font-size: 20px;
+    text-transform: uppercase;
+    text-decoration:  none;
+    color: #bdbdbd;
+}
+
+#hola a:hover{
+    color: #7a7a7a;
+}

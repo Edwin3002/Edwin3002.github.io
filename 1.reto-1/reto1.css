@@ -81,6 +81,7 @@ li{
     text-transform: uppercase;
     text-decoration:  none;
     color: #bdbdbd;
+    width: 100px;
 }
 
 #hola a:hover{

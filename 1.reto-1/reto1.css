@@ -71,6 +71,7 @@ li{
     right: 0;
     margin-top: 5px;
     list-style: none;
+    width: 100px;
 }
 
 #hola a{
@@ -81,7 +82,7 @@ li{
     text-transform: uppercase;
     text-decoration:  none;
     color: #bdbdbd;
-    width: 100px;
+    
 }
 
 #hola a:hover{

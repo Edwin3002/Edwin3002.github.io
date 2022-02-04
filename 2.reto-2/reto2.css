@@ -1,0 +1,109 @@
+body{background-image: url("../2.reto-2/Media.jpg");
+}
+
+:root{
+    --purple1: #B667F1;
+    --purple2: #9C51E0;
+    --purple3: #8A39E1;
+    --orange: #ECC488;
+}
+
+input{
+    display: block;
+}
+
+#tittle{
+    color: var(--purple3);
+    text-transform: uppercase;
+    text-align: center;
+}
+
+#description{
+    font-size: 20px;
+    text-align: center;
+
+}
+
+label{
+    color: var(--purple2);
+    font-size: 24px;
+    margin-left:40px ;
+}
+
+input[type=text]{
+    width: 90%;
+    margin-left:40px;
+    height: 40px;
+
+    margin-bottom: 10px;
+}
+input[type=number]{
+    width: 90%;
+    height: 40px;
+
+    margin-left:40px;
+    margin-bottom: 10px;}
+input[type=email]{
+    width: 90%;
+    height: 40px;
+
+    margin-left:40px;
+    margin-bottom: 10px;}
+    input[type=range]{
+        width: 90%;
+        height: 40px;
+
+    margin-left:40px;
+    margin-bottom: 10px;
+    }
+    #dropdown{
+        width: 90%;
+        height: 40px;
+        margin-left:40px;
+        margin-bottom: 10px;
+    }
+
+.check{
+    display: inline;
+}
+
+input[type=radio]{
+    margin-left:40px;
+    
+    }
+
+input[type=checkbox]{
+margin-left:40px;
+
+}
+
+span{
+    font-size: 20px;
+}
+
+span:hover{
+    color: var(--purple1);
+    transform: scale(2, 2);
+}
+
+textarea{
+    margin: auto;
+    display: block;
+    margin-top: 10px;
+    resize: none;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 2px 3px var(--purple1);
+    padding: 10px;
+}
+
+button{
+    width: 200px;
+    height: 50px;
+    display: block;
+    margin: 20px auto;
+    background-color: var(--purple3);
+    color: aliceblue;
+    font-weight: bold;
+    border-radius: 5px;
+}

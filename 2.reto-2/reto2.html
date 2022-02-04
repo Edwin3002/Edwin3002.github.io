@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../2.reto-2/reto2.css">
+    <title>Formularios</title>
+</head>
+
+<body>
+    <h1 id="tittle">
+        Formularios reto2
+    </h1>
+    <p id="description">Gracias por ayudarnos a mejorar al dandonos feedback</p>
+    <form action="" id="survey-form">
+        <label for="" id="name-label">Nombre</label>
+        <input required re type="text" name="hola" id="name" title="Completa" placeholder="Nombre completo">
+        <label for="" id="email-label">Correo</label>
+        <input required type="email" name="" id="email" title="Completa" placeholder="Correo electronico">
+        <label for="" id="number-label">Número</label>
+        <input required type="number" id="number" minlength="9" maxlength="10" placeholder="Numero celular">
+        <label for="" id="number-label">Edad</label>
+        <input required type="range" min="10" max="100" placeholder>
+        <label for="" id="name-label">Nacionalidad</label>
+
+        <select name="Pais" id="dropdown">
+            <option value="" disabled selected>Seleccione país</option>
+            <option value="Colombia">Colombia</option>
+            <option value="Mexico">Mexicó</option>
+            <option value="Brazil">Brazil</option>
+        </select>
+        <hr>
+
+        <label for="" id="name-label">Ocupacion</label><br>
+
+        <input class="check" required type="radio" name="r1" value="joven">
+        <span>Estudiante</span>
+        <input class="check" required type="radio" name="r1">
+        <span>Trabajador</span>
+        <input class="check" required type="radio" name="r1">
+        <span>Pensionado</span>
+        <input class="check" required type="radio" name="r1">
+        <span>Otro
+        </span>
+        <hr>
+        <label for="" id="name-label">A que quiere aspirar</label><br>
+
+        <input class="check" type="checkbox" id="cbox1" value="1_checkbox">
+        <span>Backend
+        </span> <input class="check" type="checkbox" id="cbox2" value="2_checkbox">
+        <span>Fullstack
+        </span> <input class="check" type="checkbox" id="cbox3" value="3_checkbox">
+        <span>Frontend
+        </span> <br><hr>
+        <label for="" id="name-label">Comentarios, sugerencias o dudas?</label><br>
+
+        <textarea autofocus name="" id="" cols="90" rows="15" placeholder="Comentarios"></textarea>
+        <button type="submit">SEND!</button>
+    </form>
+</body>
+
+</html>

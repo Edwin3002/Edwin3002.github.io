@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #eee;
+}
+
+.contenedor {
+  width: 60%;
+  height: 50vh;
+  margin: auto;
+  margin-top: 100px;
+  border: 1px solid black;
+  background-image: url(./World.jpg);
+  background-size: 100%;
+  padding: 0 30px;
+}
+h1{
+  text-align: center;
+  margin: 20px auto;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+input {
+  border: 2px solid skyblue;
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+}
+
+input::placeholder {
+  text-align: center;
+}
+input:hover {
+  background-color: aliceblue;
+}
+.cantidad input {
+  margin: auto;
+  display: flex;
+  width: 50%;
+}
+
+.moneda {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+select {
+  width: 20%;
+  padding: 5px;
+  margin: 30px 0;
+  text-align: center;
+  border-radius: 10px;
+  border: 1px solid #b3e2f7;
+}
+select:hover{
+  background-color: #ecf6fa;
+}
+
+button {
+  display: block;
+  width: 30%;
+  margin: 20px auto;
+  padding: 10px;
+  background-color: #18a843;
+  border: 2px solid #11698e;
+  border-radius: 10px;
+  color: whitesmoke;
+}
+
+button:hover {
+  transform: scale(1.1);
+}
+#alerta1 p {
+  text-align: center;
+  margin: 20px auto;
+  padding: 10px;
+  width: 50%;
+  background-color: #baffb4;
+  border: 2px solid #11698e;
+  border-radius: 10px;
+}
+
+ul {
+  margin: auto;
+  display: flex;
+  width: 50%;
+
+}
+
+ul li {
+  text-align: center;
+  list-style: none;
+  color: whitesmoke;
+  font-size: x-large;
+  font-style: oblique;
+  text-shadow: 2px 3px #000000;
+  margin: auto;
+}

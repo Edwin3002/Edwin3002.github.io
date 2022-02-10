@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Divisas</title>
+</head>
+
+<body>
+    <div class="contenedor">
+        <h1>Conversor de divisas</h1>
+        <form action="" id="form">
+            <div class="cantidad"><input id="cantidadDinero" type="number" placeholder="Cantidad de dinero" required>
+            </div>
+            <div class="moneda" id="coin">
+                    <select class="" id="moneda1" name="select"">
+                            <!-- <option value=" 1" selected>Usd</option>
+                        <option value="20">Mxn</option>
+                        <option value="4000">Cop</option>
+                        <option value="0.88">Euro</option>
+                        <option value="0.75">Libra</option> -->
+                    </select>
+                <select class="" id="moneda2" name="select"">
+                        <!-- <option value=" 1">Usd</option>
+                    <option value="20" selected>Mxn</option>
+                    <option value="4000">Cop</option>
+                    <option value="0.88">Euro</option>
+                    <option value="0.75">Libra</option> -->
+                </select>
+            </div>
+            <div class="btn">
+
+                <button id="calcular" type="button">Convertir</button>
+            </div>
+            <ul id="mylist">
+
+            </ul>
+            <div class="final">
+                <div id="alerta1"></div>
+        </form>
+    </div>
+    
+
+    </div>
+    <script src="./script.js" type="module"></script>
+    <script src="./moneda.js"></script>
+</body>
+
+</html>

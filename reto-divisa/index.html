@@ -1,75 +1,52 @@
-// importa y creo varables
-import {divisa} from './moneda.js';
-let boton = document.getElementById('calcular');
-let coin = document.getElementById('moneda1');
-let coin2 = document.getElementById('moneda2');
-boton.addEventListener('click', convertir);
+<!DOCTYPE html>
+<html lang="en">
 
-const money = divisa;
-console.log(money)
-money.forEach(moneda =>{  
-    const{name, price} = moneda;
-    coin.innerHTML +=`
-                        <option value="${price}">${name}</option>
-    `
-    coin2.innerHTML +=`
-                        <option value="${price}">${name}</option>
-    `
-});
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Divisas</title>
+</head>
 
-//añádo la opcion del yen
-let alerta2 = document.createElement('option');
-alerta2.setAttribute("value", "115");
-document.getElementById('moneda2').appendChild(alerta2);
-let texto2 = document.createTextNode("Yen");
-alerta2.append(texto2)
+<body>
+    <div class="contenedor">
+        <h1>Conversor de divisas</h1>
+        <form action="" id="form">
+            <div class="cantidad"><input id="cantidadDinero" type="number" placeholder="Cantidad de dinero" required>
+            </div>
+            <div class="moneda" id="coin">
+                    <select class="" id="moneda1" name="select"">
+                            <!-- <option value=" 1" selected>Usd</option>
+                        <option value="20">Mxn</option>
+                        <option value="4000">Cop</option>
+                        <option value="0.88">Euro</option>
+                        <option value="0.75">Libra</option> -->
+                    </select>
+                <select class="" id="moneda2" name="select"">
+                        <!-- <option value=" 1">Usd</option>
+                    <option value="20" selected>Mxn</option>
+                    <option value="4000">Cop</option>
+                    <option value="0.88">Euro</option>
+                    <option value="0.75">Libra</option> -->
+                </select>
+            </div>
+            <div class="btn">
 
-//Trae los valores del dom
-function convertir() {
-    let moneda1 = parseFloat(document.getElementById('moneda1').value);
-    let moneda2 = document.getElementById('moneda2').value;
-    multiplicar(moneda1, moneda2)
-}
+                <button id="calcular" type="button">Convertir</button>
+            </div>
+            <ul id="mylist">
 
-//realiza las operaciones
-function multiplicar(conversion1, conversion2) {
-    let resultado = parseFloat(conversion2 / conversion1);
-    let cantidadDinero = parseFloat(document.getElementById('cantidadDinero').value);
-    let rFinal = parseFloat(cantidadDinero * resultado);
-    console.log(Number.isNaN(rFinal))
-    console.log(rFinal);
-    //Añade un elemento p con el valor convertido
+            </ul>
+            <div class="final">
+                <div id="alerta1"></div>
+        </form>
+    </div>
+    
 
-    let alerta = document.createElement('p');
-    if (rFinal >= 0) {
-        let texto = document.createTextNode(rFinal.toFixed(2) + '$');
-        alerta.appendChild(texto);
-        document.getElementById('alerta1').appendChild(alerta);
-    } else { 
-        alert('Algo salio mal')
-    }
-}
+    </div>
+    <script src="./script.js" type="module"></script>
+    <script src="./moneda.js"></script>
+</body>
 
-//Document fragment
-const myList = document.getElementById('mylist');
-const docFrag = document.createDocumentFragment();
-
-let item1 = document.createElement('li');
-let item2 = document.createElement('li');
-let item3 = document.createElement('li');
-let item4 = document.createElement('li');
-let item5 = document.createElement('li');
-
-item1.textContent = ('Usd');
-item2.textContent = ('Mxn');
-item3.textContent = ('Cop');
-item4.textContent = ('Euro');
-item5.textContent = ('Libra');
-
-docFrag.appendChild(item1);
-docFrag.appendChild(item2);
-docFrag.appendChild(item3);
-docFrag.appendChild(item4);
-docFrag.appendChild(item5);
-
-myList.appendChild(docFrag)
+</html>

@@ -4,9 +4,10 @@ let boton = document.getElementById('calcular');
 let coin = document.getElementById('moneda1');
 let coin2 = document.getElementById('moneda2');
 boton.addEventListener('click', convertir);
-console.log(divisa)
 
-divisa.forEach(moneda =>{  
+const money = divisa;
+console.log(money)
+money.forEach(moneda =>{  
     const{name, price} = moneda;
     coin.innerHTML +=`
                         <option value="${price}">${name}</option>
@@ -36,19 +37,15 @@ function multiplicar(conversion1, conversion2) {
     let cantidadDinero = parseFloat(document.getElementById('cantidadDinero').value);
     let rFinal = parseFloat(cantidadDinero * resultado);
     console.log(Number.isNaN(rFinal))
-    console.log(rFinal)
+    console.log(rFinal);
     //Añade un elemento p con el valor convertido
 
     let alerta = document.createElement('p');
     if (rFinal >= 0) {
-        let texto = document.createTextNode(rFinal + '$');
+        let texto = document.createTextNode(rFinal.toFixed(2) + '$');
         alerta.appendChild(texto);
         document.getElementById('alerta1').appendChild(alerta);
-    } else { //Alerta de si no se introduce un numero
-        // let texto = document.createTextNode("Algo salio mal");
-        // alerta.appendChild(texto);
-        // alerta.setAttribute("style", "background-color: #FFAFAF;");
-        // document.getElementById('alerta1').appendChild(alerta);
+    } else { 
         alert('Algo salio mal')
     }
 }

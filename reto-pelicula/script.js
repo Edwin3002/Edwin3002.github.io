@@ -76,7 +76,7 @@ const cartas = document.getElementById('cartas');
 console.log(apiDbd);
 const Killers = apiDbd;
 const showKillers = (Kill) => {
-
+    cartas.innerHTML = '';
     Kill.forEach(element => {
         //Trae solo todos los objetos
         const { name, alias, resumen, image, id } = element;

@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;900&display=swap");
+
+:root {
+  --red: #d22f26;
+  --black: #000000;
+  --white: #ffffff;
+  --gray: #686868;
+  --head7: 200%;
+  --head5: 150%;
+  --head3: 100%;
+  --head2: 80%;
+}
+
+body {
+  background-color: var(--black);
+  overflow-x:hidden;
+}
+.nav-link {
+  font-weight: 900;
+}
+.positionUp {
+  position: relative;
+  padding: 0px 2px;
+  top: 50px;
+  z-index: 100;
+}
+.positionDown {
+  position: relative;
+  padding: 0px 2px;
+  bottom: 50px;
+}
+.nav-item i{
+  color: var(--white);
+  cursor: pointer;
+}
+.nav-item i:hover{
+  color: var(--gray);
+  
+}
+
+button:hover{
+  transform: scale(1.1);
+  
+}
+button .fa-play{
+  color: var(--black);
+}
+button{
+  padding: 10px 30px;
+  border: none;
+  border-radius: 10px;
+  
+}
+/* .over{
+  width: 100%;
+  min-width: 500px;
+} */
+#cajaPeli img:hover{
+  transform: scale(1.1);
+}
+.cover{
+  object-fit: cover;
+  width: 200px;
+  height: 300px;
+}
+.nav-item i{
+  color: var(--white);
+}
+.imgGrande{
+  width: 65%;
+  margin: auto;
+}
+@media (max-width:1000px) {
+  .imgGrande{
+    width: 80%;
+    margin: auto;
+  }
+  .cover{
+    object-fit: cover;
+    width: 100px;
+    height: 150px;
+  }
+}
+h2{
+  margin-left: 20px;
+}

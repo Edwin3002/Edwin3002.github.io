@@ -1,0 +1,31 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;900&display=swap");
+
+:root {
+  --red: #d22f26;
+  --black: #000000;
+  --white: #ffffff;
+  --gray: #686868;
+  --head7: 200%;
+  --head5: 150%;
+  --head3: 100%;
+  --head2: 80%;
+}
+body {
+  background-color: var(--black);
+  overflow-x: hidden;
+}
+.nav-link {
+  font-weight: 900;
+}
+.text-white{
+    text-align: center;
+}
+.atras{
+  text-decoration: none;
+}
+.tableM{
+    margin: 20px auto;
+}
+#form{
+    margin: 50px auto;
+}

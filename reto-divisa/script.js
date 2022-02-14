@@ -37,14 +37,17 @@ function multiplicar(conversion1, conversion2) {
     let cantidadDinero = parseFloat(document.getElementById('cantidadDinero').value);
     let rFinal = parseFloat(cantidadDinero * resultado);
     console.log(Number.isNaN(rFinal))
-    console.log(rFinal);
+    console.log(rFinal)
     //Añade un elemento p con el valor convertido
 
     let alerta = document.createElement('p');
+    let ale = document.getElementById('alerta1');
+    ale.innerHTML = " "
     if (rFinal >= 0) {
         let texto = document.createTextNode(rFinal.toFixed(2) + '$');
         alerta.appendChild(texto);
-        document.getElementById('alerta1').appendChild(alerta);
+        ale.appendChild(alerta);
+        // document.getElementById('alerta1').appendChild(alerta);
     } else { 
         alert('Algo salio mal')
     }

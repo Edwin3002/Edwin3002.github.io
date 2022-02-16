@@ -1,0 +1,64 @@
+{
+    "users": [
+        {
+            "sexo": "hombre",
+            "edad": 18,
+            "peso": 70,
+            "altura": 180
+          },
+          {
+            "sexo": "mujer",
+            "edad": 20,
+            "peso": 75,
+            "altura": 170
+          },
+          {
+            "sexo": "hombre",
+            "edad": 25,
+            "peso": 60,
+            "altura": 175
+          },
+          {
+            "sexo": "mujer",
+            "edad": 40,
+            "peso": 55,
+            "altura": 160
+          },
+          {
+            "sexo": "hombre",
+            "edad": 38,
+            "peso": 40,
+            "altura": 165
+          },
+          {
+            "sexo": "mujer",
+            "edad": 20,
+            "peso": 35,
+            "altura": 140
+          },
+          {
+            "sexo": "hombre",
+            "edad": 38,
+            "peso": 40,
+            "altura": 165
+          },
+          {
+            "sexo": "mujer",
+            "edad": 57,
+            "peso": 65,
+            "altura": 170
+          },
+          {
+            "sexo": "hombre",
+            "edad": 47,
+            "peso": 90,
+            "altura": 185
+          },
+          {
+            "sexo": "mujer",
+            "edad": 330,
+            "peso": 95,
+            "altura": 190
+          }
+    ]
+}

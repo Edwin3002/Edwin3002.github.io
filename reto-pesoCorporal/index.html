@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/3fdf3ff91d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Masa corporal</title>
+
+</head>
+
+<body>
+    <div class="contenedor">
+        <h1>Indice de masa corporal</h1>
+        <form action="">
+            <ul>
+                <li class="sex">
+                    <label for="">Sexo</label>
+                    <select action="" id="sex" name="sexo">
+                        <option name="sexo" value="hombre">Hombre</option>
+                        <option value="mujer">Mujer</option>
+                    </select>
+                </li>
+                <li>
+
+                    <label for="">Edad</label>
+                    <input id="edad" type="number" placeholder="Años" required>
+                </li>
+                <li>
+
+                    <label for="">Peso</label>
+                    <input id="peso" type="number" placeholder="Kilos" required>
+                </li>
+                <li>
+                    <label for="">Altura</label>
+                    <input id="altura" type="number" placeholder="Centimetros" required>
+                </li>
+                <li>
+                    <button id="calcular" type="button">
+                        Calcular
+                    </button>
+                </li>
+            </ul>
+        </form>
+    </div>
+    <div  id="resultado" class="resultado">
+        resultado 
+    </div>
+    <!-- nav categorias -->
+    <br><br><br>
+    <ul class="navList">
+        <li class="nav-item ">
+            <a class="nav" onclick="pintarVideos()" aria-current="page" href="#">Todos</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav" href="#" onclick="pintarGen('hombre')">Hombres</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav" href="#" onclick="pintarGen('mujer')">Mujeres</a>
+        </li>
+    </ul>
+    <div class="colores">
+        <span style="background-color: blue;">Debajo del peso</span>
+        <span style="background-color: green;">Saludable</span>
+        <span style="background-color: orange;">Con sobrepeso</span>
+        <span style="background-color: red;">Obeso</span>
+        <span style="background-color: purple;">Obesidad-extrema</span>
+    </div>
+    <!-- tabla del form -->
+    <div class="tabla" id="tabla">
+        <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">Genero</th>
+                <th scope="col">Edad</th>
+                <th scope="col">Peso</th>
+                <th scope="col">Estaura</th>
+                <th scope="col">Imc</th>
+              </tr>
+            </thead>
+            <tbody id="listar">
+            </tbody>
+        </table>
+    </div>
+    <script src="./js/index.js"></script>
+</body>
+
+</html>

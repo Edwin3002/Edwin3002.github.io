@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./img/icon.jpg" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/reserva.css">
+    <title>Parrila</title>
+
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="navbar">
+        <div class="container-fluid">
+            <img src="./Dbd/logo.jpg" class="logo" alt="">
+            <a class="navbar-brand" href="#">PARRILLA</a>
+            <a class="navbar-brand" href="#menu">Ir a <i class="fas fa-book-open"></i></a>
+            <a class="navbar-brand" href="#tabla">Ir a <i class="fas fa-shopping-cart"></i></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link " id="activeCartas1" aria-current="page" href="./inicio.html">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="activeCartas2" href="nosotros.html">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" id="activeCartas2" href="reserva.html">Reservas</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- nav categorias -->
+    <br id="menu"><br><br>
+    <ul class="nav justify-content-center categorias" >
+        <li class="nav-item ">
+            <a class="nav-link active text-light fw-bold fs-3" onclick="pintarCartas__all()" aria-current="page" href="#">Todas</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link active text-light fw-bold fs-3" href="#" onclick="pintarCartas__categoria('carnes')">Carnes</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link active text-light fw-bold fs-3" href="#" onclick="pintarCartas__categoria('bebidas')">Bebidas</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link active text-light fw-bold fs-3" href="#" onclick="pintarCartas__categoria('postres')">Postres</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link active text-light fw-bold fs-3" href="#" onclick="pintarCartas__categoria('comidas_rapidas')">Comidas Rapidas</a>
+        </li>
+    </ul>
+
+    
+    <!-- cartas horizon -->
+    <div class="cartas" id="cartas">
+    </div>
+    
+    <!-- /tabla carrito -->
+      <div class="tabla" id="tabla">
+        <table class="tablaCarrito">
+            <thead>
+              <tr class="text-white">
+                <th scope="col">carrito</th>
+                <th scope="col">Pedido</th>
+              </tr>
+            </thead>
+            <tbody id="listarCarrito">
+                <tr>
+                </tr>
+            </tbody>
+            <tfoot id="listasNumeroP">
+
+            </tfoot>
+        </table>
+    </div>
+
+
+    <!-- formulario de info -->
+    <form class="formR w-75 background" id="form">
+        <div class="form-info text-light" id="form-info">
+            <h2 class="form_title">Diligencia tus datos para hacer tu pedido</h2>
+            <div class="col">
+                <label for="exampleFormControlInput1" class="form-label">Nombre <span style="color: red;">*</span></label>
+                <input id="inputNombre" type="text" class="form-control border border-dark border-3" placeholder="First name"
+                    aria-label="Tu nombre es ?" required>
+            </div>
+            <div class="col">
+                <label for="exampleFormControlInput1" class="form-label">Numero de telefono <span style="color: red;">*</span></label>
+                <input id="inputTelefono" type="number" min="1" maxlength="10" class="form-control border border-dark border-3" placeholder="Number phone"
+                    aria-label="Tu telefono es ?" required>
+            </div>
+            <div class="col">
+                <label for="exampleFormControlInput1" class="form-label">Numero de mesa (Si estas en el restaurante)</label>
+                <input id="inputMesa" type="number" min="1" max="100" class="form-control border border-dark border-3" placeholder="Number table"
+                    aria-label="Tu telefono es ?">
+            </div>
+            <div class="col">
+                <label for="exampleFormControlInput1" class="form-label">Hora de llegada <span style="color: red;">*</span>(Reloj de 24 horas)</label>
+                <input id="inputHora" type="time" class="form-control border border-dark border-3" placeholder="Hora 24"
+                    aria-label="Last name" required>
+            </div>
+            <div class="col-12">
+                <button id="btnEnviar" class="btn btn-dark" type="submit" onclick="confirmarP()">Confirmar pedido</button>
+        </div>
+    </form>
+    <!-- contactanos -->
+    <div class="contact">
+
+        <ul class="list text-light">
+            <h3 class="text-danger">Contactanos</h3>
+            <li><a href="http://" class="text-light" target="_blank" rel="noopener noreferrer">Direccion</a> </li>
+            <li> <a href="http://" class="text-light" target="_blank" rel="noopener noreferrer">Correo</a></li>
+            <li> <a href="http://" class="text-light" target="_blank" rel="noopener noreferrer">Telefono</a></li>
+
+        </ul>
+        <ul class="list text-light">
+            <h3 class="text-warning">Redes sociales</h3>
+            <li><a href="http://" class="text-light" target="_blank" rel="noopener noreferrer">Facebook</a> </li>
+            <li> <a href="http://" class="text-light" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+            <li> <a href="http://" class="text-light" target="_blank" rel="noopener noreferrer">Youtube</a></li>
+        </ul>
+    </div>
+    <p class="derechos text-light">Todos los derechos reservados © 2021 <img src="./img/icon.jpg" width="40px" alt="">
+    </p>
+    <script src="https://kit.fontawesome.com/3fdf3ff91d.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <script src="./js/reserva.js"></script>
+</body>
+
+</html>
+

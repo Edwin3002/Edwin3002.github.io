@@ -1,13 +1,12 @@
 const API_all = async () => {
-    const data = await fetch('https://proyecto-independiente.herokuapp.com/menu');
+    const data = await fetch('https://app-independiente.herokuapp.com/menu');
     const json = await data.json()
     return json
 }
 
 const API_categoria = async (categoria) => {
-    const data = await fetch(`https://proyecto-independiente.herokuapp.com/menu?categoria=${categoria}`);
+    const data = await fetch(`https://app-independiente.herokuapp.com/menu?categoria=${categoria}`);
     const json = await data.json()
-    console.log(json)
     return json
 }
 

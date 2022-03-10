@@ -1,0 +1,86 @@
+body{
+    background-color:var(--color2);
+    margin: 0;
+    padding: 0;
+    color: #ffff;
+}
+
+:root{
+    --color1:rgb(38, 48, 65) ;
+    --color2:rgb(23, 29, 39);
+}
+
+/* footer */
+hr{
+    width: 90%;
+    margin: 50px auto;
+}
+.contact{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 20px 10px;
+}
+.contact ul{
+    list-style: none;
+}
+
+.derechos{
+    text-align: center;
+}
+.contact ul li a:hover{
+    background-color: rgb(209, 209, 209);
+}
+
+.card{
+    margin-top: 50px;
+    margin-left: 10px;
+    margin-right: 10px;
+    display: flex;
+    border: transparent;
+    background-color:var(--color1) ;
+}
+
+#cartas{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around center;
+}
+
+.titulo{
+    padding-left: 100px;
+}
+
+.pais{
+    font-size: 20px;
+    font-weight: 700;
+    padding: 15px 0 0 15px;
+}
+
+.informacion{
+    font-size: 12px;
+    padding-left: 15px;
+    padding-bottom: 25px;
+    text-align: start;
+    line-height: 0px;
+}
+
+.section_2{
+    display: flex;
+    margin-top: 20px;
+    margin-left: 12px;
+}
+.tamanio{
+    width: 13px;
+}
+
+button{
+    border: 0px solid transparent;
+    border-color: transparent;
+}
+
+.navbar{
+    background-color: var(--color1);
+    display: flex;
+}

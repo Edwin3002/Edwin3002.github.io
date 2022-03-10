@@ -1,0 +1,178 @@
+body{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://images.pexels.com/photos/3769138/pexels-photo-3769138.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+    background-attachment: fixed;
+    background-size: 100%;
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --color2:white;
+    --color3: #000000;
+    --color1:rgb(96, 205, 255);
+    --color1_dmode:rgb(38, 48, 65) ;
+    --color2_dmode:rgb(23, 29, 39);
+}
+.form-select{
+    margin: 0 20px;
+}
+
+#cartas{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+
+.card{
+    background-color: var(--color1);
+    width: 220px;
+    border-radius: 5px;
+    margin-top: 15px;
+    transition: all 0.5s;
+    margin-bottom: 10px;
+}
+
+.card img{
+    width: 100%;
+    padding: 10px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.nombre {
+    color: var(--color3);
+    font-size: 20px;
+    font-weight: 900;
+    margin: 0;
+    padding: 0px 0 15px 0px;
+    transition: all 0.5s;
+    text-align: center;
+}
+
+.informacion{
+    padding: 0 0 20px 15px;
+    line-height: 0;
+
+}
+
+.informacion p{
+    padding: 5px;
+    font-size: 15px;
+}
+
+.section_2{
+padding: 15px 0px 5px 20px;
+
+}
+
+.navbar{
+    padding: 10px;
+    background-color: var(--color2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.5s;
+}
+
+.navbar a{
+    font-weight: bolder;
+    text-decoration: none;
+    color: var(--color3);
+    font-size: 1.5rem;
+    padding-left: 20px;
+}
+
+.navbar button{
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    padding: 10px;
+    border: none;
+    background: transparent;
+    transition: 0.5s all ease-out;
+}
+
+.navbar button:hover{
+    background-color: var(--color1_dmode);
+    color: var(--color2);
+}
+
+.section_2 button{
+    background-color: var(--color1);
+    color: var(--color3);
+    border: var(--color1);
+    transition: 0.5s all ease-out;
+
+}
+
+.section_2 input{
+    transition: 0.5s all ease-out;
+}
+
+.section_2 select{
+    transition: 0.5s all ease-out;
+}
+
+
+/*Modo Oscuro*/
+
+.darkmode {
+    background-color: var(--color2_dmode);
+}
+
+.darkmode .navbar{
+    background-color:var(--color1_dmode);
+}
+
+.darkmode .navbar a{
+    color: var(--color2);
+}
+
+.darkmode .navbar button{
+    color: var(--color2);
+}
+
+.darkmode .navbar button:hover{
+    background-color: var(--color2);
+    color: var(--color2_dmode);
+}
+
+.darkmode .card{
+    color: var(--color2);
+    background-color: var(--color1_dmode);
+}
+
+.darkmode .nombre{
+    color: var(--color2);
+}
+
+.darkmode .section_2 input{
+    border: none;
+    background-color: var(--color1_dmode);
+    color: var(--color2);
+}
+
+.darkmode .section_2 input::placeholder{
+    color: var(--color2);
+}
+
+.darkmode .section_2 select{
+    border: none;
+    background-color: var(--color1_dmode);
+    color: var(--color2);
+}
+
+.darkmode .section_2 button{
+    background-color: var(--color1_dmode);
+    border: var(--color1_dmode);
+    color: var(--color2);
+}
+.darkmode .section_2 button:hover{
+    background-color: var(--color2);
+    border: var(--color2);
+    color: var(--color1_dmode);
+}
+

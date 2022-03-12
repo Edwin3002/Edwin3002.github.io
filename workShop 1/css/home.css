@@ -1,0 +1,57 @@
+
+.fondo{
+    width: 90%;
+    margin: 10px auto;
+    position: relative;
+    text-align: center;
+}
+.imgFondo{
+  padding: 20px;
+  border-radius: 20px;
+  border: 2px solid black;
+    display: flex;
+    padding: auto;
+    width: 100%;
+    object-fit: cover;
+    
+}
+.textImg{
+  text-align: center;
+  font-size: 500%;
+}
+.textImg a{
+  text-decoration: none;
+
+}
+  /* footer */
+  hr{
+    width: 90%;
+    margin: 50px auto;
+  }
+.footerImg img{
+  display: flex;
+  margin: 20px auto;
+}
+  .contact{
+    background-color: black;
+    margin: 10px 10px;
+    height: 200px;
+  }
+
+  .redes{
+    padding: 100px auto;
+    width: 50%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .contact div i{
+    padding: 20px;
+    border-radius: 500px;
+    border: 2px solid white;
+    color: aliceblue;
+  }
+  .contact div i:hover{
+    color: orange;
+  }

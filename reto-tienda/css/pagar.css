@@ -1,0 +1,93 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.main-container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+
+.product-container {
+    display: inline-flex;
+    /* width: 50%; */
+    flex-direction: column;
+    margin: 50px;
+    box-shadow: 4px 5px 15px 2px rgba(0,0,0,0.29);
+    border-radius: 20px;
+}
+
+#form {
+    /* width: 30%; */
+    margin: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+}
+
+#shop {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.shop-1 {
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+.shop-1 .img{
+    display: flex;
+    width: 200px;
+    height: 150px;
+}
+.shop-1 img{
+    margin: auto;
+    display: flex;
+    object-fit: cover;
+    align-self: flex-end;
+}
+
+.shop-1-content {
+    margin: 0 25px;
+}
+
+.shop-2 {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+}
+
+.shop-2-input {
+    margin: auto;
+    width: fit-content;
+    border: none;
+    outline: none;
+    display: flex;
+    align-self: center;
+}
+
+.shop-button {
+    height: fit-content;
+}
+.btnPay{
+    background-color: #1de67b;
+    margin: auto;
+    color: white;
+}
+.btnPay:hover{
+    background-color: #0ddb6d;
+    color: rgb(190, 190, 190);
+
+}
+
+/* mmodal */
+.caja{
+    width: 50%;
+    margin: auto;
+}
+.gracias{
+margin: auto;
+}

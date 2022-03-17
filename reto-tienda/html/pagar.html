@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="../css/pagar.css">
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <title> Pago</title>
+</head>
+
+<body>
+  <!-- nav lateral -->
+
+  <nav class="navbar navbar-light  bg-light fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand fst-italic tiendita text-danger fw-bolder" href="#">Tiendita</a>
+      <a href="./index.html">
+        <button class="navbar-toggler btn btn-secondary" type="button">Home
+        </button>
+      </a>
+    </div>
+  </nav>
+
+  <div class="main-container">
+    <div class="product-container"></div>
+
+    <!-- tabla de pago -->
+    <form id="form" class="tarjeta" id="tabla">
+      <h1 class="text-center">Pago</h1>
+      <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Email</label>
+        <input type="email" class="form-control" id="inputCorreo" placeholder="">
+      </div>
+      <div class="mb-0">
+        <label for="exampleInputEmail1" class="form-label">Card information</label>
+        <input type="number" minlength="16" max="16" min="0" class="form-control" id="inputTarjeta" placeholder="1234 1234 1234 1234">
+      </div>
+      <div class="row mt-0">
+        <div class="col-sm-7 mb-1">
+          <input type="date" class="form-control" id="inputFecha" placeholder="Fecha de ven." aria-label="City">
+        </div>
+        <div class="col-sm mb-1">
+          <input type="number" class="form-control" id="inputCVV" placeholder="CVV" aria-label="State">
+        </div>
+      </div>
+      <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Card name</label>
+        <input type="text" class="form-control" id="inputNombre" placeholder="">
+      </div>
+      <div class="d-flex justify-content-center"><button id="pay-button" type="button"
+          class="btn btnPay w-100 pagar fw-bold text-uppercase" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="confirmarP()">Pagar</button></div>
+    </form>
+  </div>
+ <!-- Button trigger modal -->
+
+<div class="modal modal1 fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-body " id="modalBody">
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btnPay" data-bs-dismiss="modal">Seguir comprando</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+  <script src="../js/pagar.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

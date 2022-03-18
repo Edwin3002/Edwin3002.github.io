@@ -1,0 +1,153 @@
+body{
+    background-image: url(https://thumbs.dreamstime.com/b/paisaje-natural-fondo-de-parque-dibujos-animados-con-%C3%A1rboles-hierba-verde-y-cielo-azul-ilustraci%C3%B3n-vectorial-211447366.jpg);
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+
+/* ///////////////home */
+.title{
+    text-align: center;
+}
+.p{
+    width: 50%;
+}
+.contenedor{
+    margin: 5% 10%;
+    text-align: center;
+}
+.cla ul{
+    list-style: none;
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+}
+.cla li{
+    margin: 50px auto;
+}
+.personaje{
+    height: 100px;
+    width: 138px;
+    background-image: url(../img/gato1.png);
+    margin: 0 auto;
+    animation: correr .5s steps(4) infinite;
+}
+@keyframes correr {
+   0%{
+       background-position: 0px;
+   } 
+   100%{
+       background-position: -558px;
+   }
+}
+.cerebro img{
+    width: 130px;
+    /* background-image: url(../img/cerebro.png); */
+}
+.card img{
+    object-fit: cover;
+    height: 250px;
+}
+
+
+/* /////////////clasificacion */
+.s{
+    height: 200px;
+    display: flex;
+}
+.salto{
+    height: 140px;
+    width: 65px;
+    background-image: url(../img/salto.png);
+    margin: 0 auto;
+    animation: salto .9s steps(4) infinite;
+    align-self: center;
+}
+@keyframes salto {
+   0%{
+       background-position: 0px;
+   } 
+   100%{
+       background-position: -262px;
+   }
+}
+@keyframes rebote{
+    0%{
+        transform: translateY(0%);
+    }100%{
+        transform: translateY(200%);
+    }
+}
+.b{
+    width: 50%;
+    margin: auto;
+    background-image: url(https://static.vecteezy.com/system/resources/previews/004/798/837/large_2x/happy-kids-cartoon-playing-basketball-flat-design-illustration-wearing-basket-uniform-in-outdoor-court-for-background-poster-or-banner-vector.jpg);
+    background-size: cover;
+    height: 200px;
+    background-color: red;
+}
+.balon{
+    color: orange;
+    font-size: 400%;
+    position: relative;
+    animation: rebote .9S alternate infinite ease-in;
+}
+.card-text{
+    text-align: justify;
+}
+
+/* clases */
+.table{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+.table .img{
+    width: 130px;
+    /* height: 100px; */
+    margin: auto;
+}
+.table img{
+   width: 100%;
+   object-fit: cover;
+}
+.table tr{
+    /* display: flex; */
+}
+.table th:nth-child(1){
+    /* display: flex; */
+    margin: auto;
+    text-transform: uppercase;
+}
+
+
+/* footer */
+hr{
+    width: 90%;
+    margin: 50px auto;
+}
+.contact{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 5% 10%;
+}
+.contact ul{
+    list-style: none;
+}
+
+.derechos{
+    /* text-align: center; */
+    margin: auto;
+
+}
+.contact ul li a:hover{
+    background-color: rgb(209, 209, 209);
+}
+
+
+.contenedor2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}

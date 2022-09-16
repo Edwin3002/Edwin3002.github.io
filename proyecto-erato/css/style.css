@@ -74,9 +74,12 @@ nav ul{
 .nav li:last-child{
     border-radius: 10px;
 }
-nav li a{
+.nav li a{
   text-decoration: none;
   color: azure;
+  display: flex;
+  width: 100%;
+  justify-content: center;
 }
 .lupa input{
     width: 80%;
